@@ -38,6 +38,7 @@ knexCleaner.clean(bookshelf.knex).then(function() {
 
 var options = {
   mode: 'delete', // Valid options 'truncate', 'delete'
+  restartSequences: false, // Only valid for PostgreSQL
   ignoreTables: ['Dont_Del_1', 'Dont_Del_2']
 }
 
